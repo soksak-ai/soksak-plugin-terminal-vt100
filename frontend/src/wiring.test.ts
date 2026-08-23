@@ -11,7 +11,7 @@ describe("VT100 terminal plugin wiring", () => {
     activate({ app, subscriptions: [] });
     expect(activateProvider).toHaveBeenCalledWith(app, [], {
       pluginId: "soksak-plugin-terminal-vt100", engineId: "vt100",
-      recoverySidecar: "recovery", programId: "terminal-vt100",
+      ptySidecarId: "soksak-sidecar-pty", terminalSidecarId: "soksak-sidecar-terminal-vt100", programId: "terminal-vt100",
     });
   });
 });
